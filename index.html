@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet>
+    <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet href=css/stylen.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" type=image/png href=img/UIETbackground.png>
+    <script src=https://www.gstatic.com/charts/loader.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <meta name="google-site-verification" content="S6KqfFgYIZ1QFFdEKnQVmJ2H_KI5OqLBfmFbxMKrLOM" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <title>T&P Cell ,UIET KUK</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="login/login.html" class="navigation__link" onclick="uncheck()">Login</a></li>
+                <li class="navigation__item"><a href="#placement" class="navigation__link"
+                        onclick="uncheck()">Placements</a></li>
+                <li class="navigation__item"><a href="#at" class="navigation__link" onclick="uncheck()">About Us</a>
+                </li>
+                <li class="navigation__item"><a href="#ot" class="navigation__link" onclick="uncheck()">Our Team</a>
+                </li>
+                <li class="navigation__item"><a href="#co" class="navigation__link" onclick="uncheck()">Coordinators</a>
+                </li>
+                <li class="navigation__item"><a href="#cu" class="navigation__link" onclick="uncheck()">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class=bg-video>
+            <div class=bg-video__content>
+                <div id="particles-js1" style="height: 100vh;width: 100vw;"></div>
+            </div>
+            <div class=header__logo-box>
+                <img src=img/UIETblack.png alt=Logo class=header__logo href=#>
+            </div>
+        </div>
+        <div class=header__text-box>
+            <div class=heading-primary>
+                <span class=heading-primary--sub><span class=typed-text></span><span class=cursor>&nbsp;</span></span>
+                <BR>
+                <h1><span class=heading-primary--main>Training and Placement Cell</span></h1>
+                <br>
+                <span class=heading-primary--sub>A constructive block of </span><span class=heading-primary--sub2>UIET,
+                    KUK</span>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="heading-primary--main white-head">Our Cell at a Glance</h2>
+    <br>
+    <br>
+    <section class=carousel-container id='corousel'>
+        <div class="mySlides animate">
+            <img src="img/header_photo.jpg" alt=slide>
+            <div class=text>Congratulations to Students for getting Selected in Hughes Systique</div>
+        </div>
+        <div class="mySlides animate">
+            <img src=img/p1.jpg alt=slide>
+            <div class=text>Our Students Selected in Vivo Mobile</div>
+        </div>
+        <a class=prev onclick=prevSlide()>&#10094;</a>
+        <a class=next onclick=nextSlide()>&#10095;</a>
+        <div class=dots-container>
+            <span class=dots onclick=currentSlide(1)></span>
+            <span class=dots onclick=currentSlide(2)></span>
+        </div>
+    </section>
+
+    <br>
+    <section class="cropper animate-me">
+        <h2 class="heading-primary--main white-head1" id="notice">Notice Board</h2>
+        <br>
+        <div class="alert">
+            <br>
+            <br>
+            <div class="noticeBody notice-board">
+                <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="Up" scrollamount="2"
+                    scrolldelay="1">
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1-cGdbRYxUTg5dXCdwz3XFnLXg0L8H_xL/view?usp=drivesdk"
+                        class="nt"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Selected Student for Internship</a>
+                    <hr class="dashed-hr">
+                </marquee>
+            </div>
+        </div>
+    </section>
+    <h2 class="heading-primary--main white-head2" id="placement">Placements Info</h2>
+    <section class="content animate-me2">
+        <div class=popup role=alert id=cse2023>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2023</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cse2023 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ece2023>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2023</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ece2023 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me2023>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2023</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me2023 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt2023>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2023</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt2023 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt22>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2022</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt22 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt21>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2021</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt21 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt20>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2020</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt20 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt19>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2019</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt19 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=cs18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">CSE Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-cs18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=ec18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ECE Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-ec18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=me18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">ME Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-me18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=popup role=alert id=bt18>
+            <div class=popup-container>
+                <div class="popup-close img-replace">Close</div>
+                <h2 class="heading-primary--sub white-headf">BT Placement 2018</h2>
+                <div class=col>
+                    <div class=ne-nutrition-distribution>
+                        <div id=ne-food-chart-bt18 class=ne-nutrition-distribution__chart></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2023</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2022</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2021</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2020</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2019</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class=button>BIO-TECH</div>
+            </div>
+        </div>
+        <div class=card>
+            <div class=front style=background-image:url(img/cardbg.jpg)>
+                <p>2018</p>
+            </div>
+            <div class=back style=background-image:url(img/cardbg.jpg)>
+                <div class=button>CSE</div>
+                <div class=button>ECE</div>
+                <div class=button>ME</div>
+                <div class="button bt2018">BIO-TECH</div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="cropper-sub animate-me">
+        <h2 class="heading-primary--main white-head3" id="at">About Us</h2>
+        <br>
+        <div class="fcontainer">
+            <div class="fitem f1">
+        <div class="felement"><img src="img/icons/eye.png" alt="" class="ouriconk"><p class="topic">Vision</div>
+                <p>To contribute in nation building by placing the emerging potential talent and be recognized as one of
+                    the pioneer Institute in India in field of Technical Education by opting best practices in the
+                    field.</p>
+            </div>
+            <div class="fitem f2">
+                <div class="felement"><img src="img/icons/earth.png" alt="" class="ouriconk">&nbsp;Motive</div>
+                <p>Maintaining database of the companies and Coordinating with them to learn about their requirements
+                    and
+                    recruitment procedures by establishing strategic links.</p>
+            </div>
+            <div class="fitem f3">
+                <div class="felement"><img src="img/icons/check.png" alt="" class="ouriconk">&nbsp;Objective</div>
+                <p>The objective of the Training and Placement cell is to conduct placement drives by inviting companies
+                    for campus recruitment for under graduate and post graduate students and imparting training
+                    opportunities that serves as a base for learning new skills and achieving job positions in reputed
+                    corporate houses subsequently.</p>
+            </div>
+            <div class="fitem f4">
+                <div class="felement"><img src="img/icons/businessman.png" alt="" class="ouriconk">&nbsp;Carrer</div>
+                <p>Inform students about the available job opportunities in government sectors and off campus drives.
+                    Arranging Motivational Talks. Conducting Psychometric/Aptitude Tests. Conducting personality
+                    development
+                    workshops and seminars.</p>
+            </div>
+            <div class="fitem f5">
+                <div class="felement"><img src="img/icons/graduate.png" alt="" class="ouriconk">&nbsp;T&P Activities</div>
+                <p>Approaching Alumni for available openings. Inviting companies for campus recruitment drive.
+                    Collaborating with companies for training opportunities, Communication Skills and Resume Writing.
+                    Group Discussion & Interview Skills.</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="heading-primary--main white-head8">Testimonials</h2>
+    <section class="testimonial-area animate-me2">
+        <div class="container">
+            <div class="testimonial-content owl-carousel">
+                <div class="single-testimonial">
+                    <p>Attending UIET Kurukshetra was a transformative experience. The supportive teachers and world-class facilities helped me grow academically and personally. The clubs, societies, and fellow students played a crucial role in my professional and social development. I am deeply grateful to everyone who contributed to my journey. Achieving the highest college ranking on Amazon was made possible by the excellent environment and resources at UIET Kurukshetra. This prestigious institution taught me compassion and grounded me in life. I am committed to bringing honor to my alma mater through my future endeavors.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/in/deepakmalik1999"><img src="img/Deepak.jpg" alt=""
+                                    class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Deepak Malik</h6>
+                            <span>Alumni from <b>Amazon</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <p>My time at UIET Kurukshetra has been nothing short of exhilarating. The institute's ambiance, teaching methods, and support from professors have been exceptional. It was through this experience that I discovered my passion for computer science, leading me to a job at Hexaware. Additionally, I actively participated in the <a class="extern" href="https://ecelluietkuk.web.app/">E-cell, UIET <i class="fa fa-external-link-square" aria-hidden="true"></i></a> and engaged in various cultural activities. The most valuable lesson I learned was to find a balance between different responsibilities. I am confident that I can face any future challenges, drawing inspiration from the life lessons learned at my alma mater. These four years have laid a solid foundation for my future career.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/in/pawansinghla300"><img src="img/Pawan.jpg" alt=""
+                                    class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Pawan Singhla</h6>
+                            <span>Alumni from <b>Hexaware</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <p>UIET is the place where all your career goals and inspiration to become a good engineer start’s.I thank to all my professors for their support and guidance.Along with course you get to learn all those soft skills like team management,communication skills,organising an event.You become more presentable towards your skillset.I thank UIET for everything they taught me and helped me to learn.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFM_H681uNjrgAAAYgaWQ5AJlByEXBFHFbF0Hmee8MahB7_18mu8dLQ93FUyR6evXJNbDNZoTTehIH9bpRLO5pkXS32Ucqf8fqJrzMO-dvFR0kccrAfwyx2XchXHLVplNA1i7I=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Frishikant-singh-97588a19b"><img src="img/rishikant.jpg" alt=""
+                                    class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Rishikant Singh</h6>
+                            <span>Alumni from <b>ADP India</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <p>I am happy to share my experience with the training and placement cell of UIET.Their dedication and hard work have been commendable in providing us with the best opportunities for internships and placements.Also,I had the greatest opportunity of being a part of the cell and so I know that the team members were always approachable and guided everyone through the entire process.I am grateful to the cell for helping me secure a great job after graduation.Overall,the college training and placement cell played a crucial role in shaping my career,and I highly recommend their services to all the students.</p>
+                    <div class="test-info">
+                        <div class="test-image">
+                            <a href="https://www.linkedin.com/in/abhishek-yadav-426a991b6">
+                                <img src="img/abhishek.jpg" alt="" class="size"></a>
+                        </div>
+                        <div class="test-details">
+                            <h6>Abhishek Yadav</h6>
+                            <span>Alumni from <b>Spyne</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cropper-sub2 animate-me">
+        <h2 class="heading-primary--main white-head3" id="ot">Our Team</h2>
+        <div class="team-lead-main">
+            
+            <div class="team-lead l1">
+                <img loading="lazy" src="img/nikhil_sir.png" class="image image8">
+                <hr>
+                <h2 class="name">DR. NIKHIL MARRIWALA</h2>
+                <h2 class="name name1">CONVENER</h2>
+                <hr>
+                <div class="ourteam">
+                    The Training and Placement department helps students get jobs at big businesses by working with
+                    their academic departments.
+                    We are thankful that many organizations trust us and hope we can continue working together in a good
+                    way.
+                </div>
+                <hr>
+                <div class="ourlogo">
+                    <a href="https://www.linkedin.com/in/dr-nikhil-kumar-marriwala-4a9b8796" class="ourdiv">
+                        <img src="img/icons/linkedin.png" alt="" class="ouricon"></a>
+                    <a href="mailto:nmarriwala@kuk.ac.in" class="ourdiv">
+                        <img src="img/icons/email-golden.png" alt="" class="ouricon ouriconlast"></a>
+                </div>
+            </div>
+            <div class="team-lead l2">
+                <img loading="lazy" src="img/DSC_0409.jpg" class="image">
+                <hr>
+                <h2 class="name">DR. SANJEEV AHUJA</h2>
+                <h2 class="name name1">CONVENER</h2>
+                <hr>
+                <div class="ourteam">
+                    The Dpt. of Training and Placement facilitates the placement of students in leading industrial
+                    enterprises. We express our gratitude to the
+                    respective organizations for their trust and confidence in our services, and look forward to
+                    fostering a strong relationship with them.
+                </div>
+                <hr>
+                <div class="ourlogo">
+                    <a href="https://www.linkedin.com/in/sanjeev-ahuja-486793111" class="ourdiv">
+                        <img src="img/icons/linkedin.png" alt="" class="ouricon"></a>
+                    <a href="mailto:sahuja2015@kuk.ac.in" class="ourdiv">
+                        <img src="img/icons/email-golden.png" alt="" class="ouricon ouriconlast"></a>
+                </div>
+            </div>
+            <div class="team-lead l3">
+                <img loading="lazy" src="img/sunild.jpg" class="image">
+                <hr>
+                <h2 class="name">DR. SUNIL DHINGRA</h2>
+                <h2 class="name name1">CONVENER (Mechanical)</h2>
+                <hr>
+                <div class="ourteam">
+                    The Department of Training and Placement helps students get placed in top industrial establishments.
+                    We thank organizations for trusting us and hope to maintain a strong relationship with them.
+                </div>
+                <hr>
+                <div class="ourlogo">
+                    <a href="https://www.linkedin.com/in/dr-sunil-dhingra-18780949" class="ourdiv">
+                        <img src="img/icons/linkedin.png" alt="" class="ouricon"></a>
+                    <a href="mailto:sdhingra2015@kuk.ac.in" class="ourdiv">
+                        <img src="img/icons/email-golden.png" alt="" class="ouricon ouriconlast"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2 class="heading-primary--main white-head6" id="co">Teacher Coordinators</h2>
+    <div class="teacher-main">
+        <div class="teacher">
+            <img loading="lazy" src="img/Saumya-mam-768x1024.jpg" class="photo">
+            <div class="name tcname">Ms. Saumya Goyal</div>
+            <div class="name1 tcdep">Dept. of Computer Engg.</div>
+            <a href="mailto:goyalsaumya4@gmail.com" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/pragya_mam.jpg" class="photo def">
+            <div class="name tcname">Ms. Pragya Chandi</div>
+            <div class="name1 tcdep">Dept. of Computer Engg.</div>
+            <a href="mailto:pragya.cse.uiet@kuk.ac.in" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/shikha_cse.jpg" class="photo">
+            <div class="name tcname">Ms. Shikha Chaudhry</div>
+            <div class="name1 tcdep">Dept. of Computer Engg.</div>
+            <a href="mailto:shikhachaudhry107@gmail.com" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/krishan.jpg" class="photo">
+            <div class="name tcname">Mr. Krishan Gopal</div>
+            <div class="name1 tcdep">Dept. of Electronics & Communications</div>
+            <a href="mailto:kgopal2015@kuk.ac.in" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/no-profile-male-img-1.png" class="photo def">
+            <div class="name tcname">Mr. Krishna Pandey</div>
+            <div class="name1 tcdep">Dept. of Electronics & Communications</div>
+            <a href="mailto:kp7636@gmail.com" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/upenderNew.jpg" class="photo def">
+            <div class="name tcname">Mr. Upender Dhull</div>
+            <div class="name1 tcdep">Dept. of Mechanical Engg.</div>
+            <a href="mailto:udhull2015@kuk.ac.in" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/Vikaskumar.jpg" class="photo">
+            <div class="name tcname">Mr. Vikas kumar</div>
+            <div class="name1 tcdep">Dept. of Mechanical Engg.</div>
+            <a href="mailto:nirmaldhotia@gmail.com" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+        <div class="teacher">
+            <img loading="lazy" src="img/archit_sir.jpg" class="photo def">
+            <div class="name tcname">Mr. Archit Sharma</div>
+            <div class="name1 tcdep">Dept. of Biotechnology</div>
+            <a href="mailto:archit.sharma786@gmail.com" class="ourdiv">
+                <img src="img/icons/email-golden.png" alt="" class="ouricon tcdiv"></a>
+        </div>
+    </div>
+    <section class="cropper-sub2 animate-me">
+    <h2 class="heading-primary--main white-head7">Student Coordinators</h2>
+    <div class="teacher-main">
+        <div class="locate">
+            <img src="img/student_coordinator.jpg" alt="Student Coordinator" class="location edge" width="600" height="450"></div>  
+    </div>
+</section>
+<h2 class="heading-primary--main white-head9">Locate us Here</h2>
+<div class="locate">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6212796226987!2d76.8131678!3d29.961570299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e39235129f179%3A0x532a6425c9f9b02!2sTraining%20and%20Placement%20Cell!5e0!3m2!1sen!2sin!4v1683720689093!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location"></iframe></div>
+    <footer class="footer">
+        <div class="bg-footer">
+            <div class="bg-footer__content bg-video__content">
+                <div id="particles-js"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="leftAddress">
+                    <h5 class="foot-title" id="cu">Contact Us</h5>
+                    <br><br>
+                    <div><img src="img/icons/pin.png" alt="" class="ouriconf">&nbsp;<span>Room No. 230, 1ST FLOOR, T&P CELL, UIET KUK</span></div><br>
+                    <div><img src="img/icons/telephone.png" alt="" class="ouriconf">&nbsp;<a href="tel:9729999805"> 97299 99805 ,</a><a
+                            href="tel:9350263755"> 9350263755 </a></div>
+                    <div><img src="img/icons/telephone.png" alt="" class="ouriconf">&nbsp;<a href="tel:01744-238967">01744-238967</a></div>
+                    <br>
+                    <div><img src="img/icons/email.png" alt="" class="ouriconf">&nbsp;<a href="mailto:tpouiet@kuk.ac.in">Mail Us</a></div>
+                </div>
+                <div class="rightHandles" style="text-align: center;">
+                    <h5 class="foot-title">Follow Us</h5>
+                    <br><br>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/tnp.uietkuk/"><img src="img/icons/facebook.png" alt="" class="ouricon"></a></li>
+                        <li><a href="https://www.linkedin.com/school/uietkurukshetra/"><img src="img/icons/linkedin.png" alt="" class="ouricon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div class="row rowl">
+                <div class="copyright">
+                    <p class="footer-text"> Copyright &copy; 2023 T&P Cell U.I.E.T KUK, Kurukshetra </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+
+    <script>
+        function check() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = true;
+        }
+        function uncheck() {
+            let inputs = document.getElementById('navi-toggle');
+            inputs.checked = false;
+        }
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader');
+            loader.style.display = 'none';
+        });
+    </script>
+    <script type=text/javascript src=data/bt18.js></script>
+    <script src=js/myscripts.js></script>
+    <script src=js/myscripts2.js></script>
+
+    <script src="js/script.js"></script>
+    <div id="dialog" class="dialog_1" title="Basic dialog">
+        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+      </div>
+</body>
+
+</html>
