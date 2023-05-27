@@ -76,7 +76,7 @@ html {
 
 .BTNHEAD2::after, .BTNHEAD2:hover {
     background-color: #A6720B !important;
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 1s;
 }
 
@@ -120,6 +120,7 @@ html {
     padding: 1rem;
     margin-bottom: 2rem;
     background-image: url(../img/cardbg2.jpg);
+    overflow: hidden;
 }
 
 .card-title {
@@ -137,7 +138,6 @@ html {
 
 .placement-info {
     margin-top: 0.6rem;
-    border-top: solid 0.1rem #000000;
     border-bottom: solid 0.1rem #000000;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
@@ -164,6 +164,11 @@ html {
 .placement-info li {
     font-size: 1.5rem;
     margin-bottom: .3rem;
+}
+
+.l {
+    padding-bottom: 1rem;
+    border-bottom: solid 0.1rem #000000;
 }
 
 @media screen and (max-width: 600px) {
@@ -206,6 +211,7 @@ margin: 0 auto !important;
 width: 18rem;
 margin: 0.4rem 1rem !important;
 margin-top: 3rem !important ;
+display: none;
 }
 
 .addplacement {

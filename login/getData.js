@@ -12,10 +12,11 @@ const students = document.getElementById('students')
 
 async function getStudentdata() {
   try {
-    let response = await fetch('https://backend-livid-psi.vercel.app/api/students', {
+        let response = await fetch('https://backend-livid-psi.vercel.app/api/students', {
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('jwt')}` // Include the JWT token in the request header
       },
     });
 
@@ -43,7 +44,7 @@ async function getStudentdata() {
         <h6 class="studdata">Student Details</h6>
         <p class="card-text">Roll No.: <b>${student.rollno}</b></p>
         <p class="card-text">Department: <b>${student.department}</b></p>
-        <p class="card-text">Passing Year: <b>${student.passingyear}</b></p>
+        <p class="card-text l">Passing Year: <b>${student.passingyear}</b></p>
         ${placementInfo}
       </div>
       <div>

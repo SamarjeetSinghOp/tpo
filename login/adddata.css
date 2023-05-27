@@ -1,10 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(rgb(255, 81, 0),rgb(243, 243, 243),rgb(0, 170, 0));
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:100vh;
   }
   
   html {
@@ -13,12 +12,14 @@ body {
   
   .form-container {
     text-align: center;
-    max-width: 40rem;
+    max-width: 50rem;
     font-size: 1.5rem;
-    color:#000000;
+    color:#ffffff;
     border-radius: .6rem;
     padding: 2rem;
-    margin: 0 auto;
+    margin: auto;
+    text-shadow: 0.1rem 0.1rem #a6720b;
+    margin-top: 20%;
   }
   
   .form-container label {
@@ -71,3 +72,32 @@ body {
     margin-bottom: 20px;
   
   }
+
+  .button {
+    background-color: #a6720b !important;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: #ffffff !important;
+    text-shadow: 0.1rem 0.1rem #000000 !important;
+    border: solid 0.1rem #ffffff !important;
+  }
+
+  .border {
+    border: solid 0.2rem #a6720b !important;
+  }
+
+  .title {
+    margin-bottom: 4rem !important;
+    font-size: 3.5rem !important;
+    text-shadow: 0.2rem 0.2rem #a6720b !important;
+  }
+
+  .button:hover {
+    box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.095) !important;
+    background-color: #b87b00 !important;
+}
+
+.button:active {
+    background-color: #7a5300 !important;
+}
