@@ -69,6 +69,12 @@ display: inline;
   .chapri {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: #a6720b;
+    text-shadow: 0.1rem 0.1rem #000000;
+    background-color: #ffffffe2;
+    display: inline-block;
+    padding: 1REM;
+    border-radius: 5PX;
   }
 
   .chapri #name {
