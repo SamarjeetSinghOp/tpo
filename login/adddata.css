@@ -61,6 +61,19 @@ body {
     border-radius: .3rem;
     margin-bottom: 1rem;
   }
+
+  .chapri h3{
+display: inline;
+  }
+
+  .chapri {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .chapri #name {
+    text-decoration: underline;
+  }
   
   #join {
     width: 95%;
