@@ -48,18 +48,18 @@ async function getStudentdata() {
         ${placementInfo}
       </div>
       <div>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="addintern btn btn-primary">Edit Internship Details</button>
+        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
       </div>
     </div>
   `;
 
-      const addintern = document.getElementsByClassName("addintern");
+      const dlt = document.getElementsByClassName("dlt");
       const addplacement = document.getElementsByClassName("addplacement");
 
       if (!localStorage.getItem('jwt')) {
-        for (let i = 0; i < addintern.length; i++) {
-          addintern[i].style.display='none';
+        for (let i = 0; i < dlt.length; i++) {
+          dlt[i].style.display='none';
           addplacement[i].style.display='none';
           
         }
@@ -144,7 +144,7 @@ async function fetchData() {
                   ${placementInfo}
                 </div>
                 <div>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="addintern btn btn-primary">Edit Internship Details</button>
+        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Edit Internship Details</button>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
       </div>
               </div>

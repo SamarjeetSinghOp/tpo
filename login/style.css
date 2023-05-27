@@ -205,13 +205,12 @@ html {
     background-color: #d8d8d8;
 }
 
-.addintern {
+.dlt {
 font-size: 1.5rem;
 margin: 0 auto !important;
 width: 18rem;
 margin: 0.4rem 1rem !important;
 margin-top: 3rem !important ;
-display: none;
 }
 
 .addplacement {
