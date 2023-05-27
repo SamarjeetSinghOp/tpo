@@ -12,7 +12,7 @@ const students = document.getElementById('students')
 
 async function getStudentdata() {
   try {
-        let response = await fetch('https://backend-livid-psi.vercel.app/api/students', {
+    let response = await fetch('https://backend-livid-psi.vercel.app/api/students', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -48,9 +48,9 @@ async function getStudentdata() {
         ${placementInfo}
       </div>
       <div>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
-      </div>
+        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
+        </div>
     </div>
   `;
 
@@ -59,9 +59,9 @@ async function getStudentdata() {
 
       if (!localStorage.getItem('jwt')) {
         for (let i = 0; i < dlt.length; i++) {
-          dlt[i].style.display='none';
-          addplacement[i].style.display='none';
-          
+          dlt[i].style.display = 'none';
+          addplacement[i].style.display = 'none';
+
         }
       }
 
@@ -144,8 +144,8 @@ async function fetchData() {
                   ${placementInfo}
                 </div>
                 <div>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Edit Internship Details</button>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
+        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
       </div>
               </div>
             `;
