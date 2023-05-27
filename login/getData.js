@@ -127,8 +127,8 @@ async function fetchData() {
       <div class="placement-info">
         <h6>Placement Information:</h6>
         <ul>
-          <li>Company: ${student.placementHistory[0].company}</li>
-          <li>CTC: ${student.placementHistory[0].packageOffered} LPA</li>
+          <li>Company: <b>${student.placementHistory[0].company}</b></li>
+          <li>CTC: <b>${student.placementHistory[0].packageOffered} LPA</b></li>
         </ul>
       </div>
     `;
@@ -137,15 +137,15 @@ async function fetchData() {
       students.innerHTML += `
               <div class='card'>
                 <div class="card-body">
-                  <h5 class="card-title">${student.name}</h5>
-                  <p class="card-text">Roll No.: ${student.rollno}</p>
-                  <p class="card-text">Department: ${student.department}</p>
-                  <p class="card-text">Passing Year: ${student.passingyear}</p>
+                  <h5 class="card-title"><b>${student.name}</b></h5>
+                  <p class="card-text">Roll No.: <b>${student.rollno}</b></p>
+                  <p class="card-text">Department: <b>${student.department}</b></p>
+                  <p class="card-text l">Passing Year: <b>${student.passingyear}</b></p>
                   ${placementInfo}
                 </div>
                 <div>
         <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="addintern btn btn-primary">Edit Internship Details</button>
-        <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit Placement Details</button>
+        <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
       </div>
               </div>
             `;
