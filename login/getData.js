@@ -49,7 +49,7 @@ async function getStudentdata() {
       </div>
       <div>
         <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="addintern btn btn-primary">Edit Internship Details</button>
-        <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit Placement Details</button>
+        <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
       </div>
     </div>
   `;
