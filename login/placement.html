@@ -1,109 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #000000;
-    }
-
-    .form-container {
-      text-align: center;
-      max-width: 400px;
-      border-radius: 6px;
-      padding: 20px;
-      color: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 100px auto;
-    }
-
-    .form-container h1 {
-      margin-bottom: 3rem;
-      color: #ffffff;
-      text-shadow: 0.1rem 0.1rem #a6720b;
-    }
-
-    .form-container label {
-      display: block;
-      margin-bottom: 10px;
-      text-shadow: 0.05rem 0.05rem #a6720b;
-    }
-
-    .form-container input[type="text"],
-    .form-container input[type="number"] {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      outline: none;
-      border-radius: 4px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-      background-color: #f7f7f7;
-    }
-
-    .form-container button {
-      padding: 10px 20px;
-      background-color: #a6720b;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-top: 3rem;
-      font-size: 1.3rem;
-      font-weight: 800;
-      border: solid 0.1rem #ffffff;
-    }
-
-
-    .form-container button:hover {
-            box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.095);
-            background-color: #b87b00;
-        }
-
-        .form-container button:active {
-            background-color: #7a5300;
-        }
-
-    #join {
-      width: 97%;
-      padding-top: 9px;
-      padding-bottom: 9px;
-      outline: none;
-      border: none;
-      text-align: center;
-      border-radius: 4px;
-      margin-bottom: 20px;
-    }
-
-    .border {
-      border: solid 0.2rem #a6720b !important;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="adddata.css">
+  <title>Edit Student Details</title>
 </head>
 
 <body>
   <div class="form-container">
-    <h1>Placement Information</h1>
-    <h4 id="name"></h4>
+    <h1 class="title">Edit Student Details</h1>
+    <h3 id="name"></h3>
     <form id="placementForm">
-      <label for="company">Company Details</label>
-      <input type="text" id="company" name="company" placeholder="Enter Company Name" class="border" required>
+      <label for="name">Company Details</label>
+      <input type="text" id="company" name="company" placeholder="Enter Company Name" class="border">
 
-      <label for="package">Package Offered</label>
-      <input type="number" id="package" name="package" placeholder="Enter Package Offered (in LPA)" class="border" required>
+      <label for="roll">Roll No.</label>
+      <input type="number" id="package" name="package" placeholder="Enter Package Offered (in LPA)" class="border">
 
-      <label for="join">Date Of Joining</label>
-      <input type="date" id="join" name="join" class="border" required>
+      <label for="year">Passing Year</label>
 
-      <button id="button1">Submit</button>
+      <input type="date" id="join" name="join" placeholder="Enter Date of Joining" class="border" required>
+      <button id="button1" class="button">Submit</button>
     </form>
-
   </div>
-
-
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const name = document.getElementById('name');
@@ -164,6 +86,7 @@
       }
     }
   </script>
+
 </body>
 
 </html>
