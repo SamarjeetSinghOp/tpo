@@ -49,7 +49,7 @@ async function getStudentdata() {
       </div>
       <div>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
+        <button onclick="deleteStudent('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
         </div>
     </div>
   `;
@@ -145,7 +145,7 @@ async function fetchData() {
                 </div>
                 <div>
         <button onclick="editPlacement('${student._id}')"  class="addplacement btn btn-primary">Edit</button>
-        <button onclick="editInternship('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
+        <button onclick="deleteStudent('${student._id}')" style="margin: 10px 0"  class="dlt btn btn-primary">Delete</button>
       </div>
               </div>
             `;
@@ -168,6 +168,38 @@ btn.addEventListener('click', (e) => {
   e.preventDefault();
   fetchData()
 })
+
+
+async function deleteStudent(studentId) {
+  const confirmed = confirm("Are you sure you want to delete this student?");
+  if (!confirmed) {
+    return;
+  }
+
+  try {
+    let response = await fetch(`https://backend-livid-psi.vercel.app/api/students/${studentId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('jwt')}`
+      }
+    });
+
+    if (response.ok) {
+      // Student deleted successfully
+      alert("Student deleted successfully.");
+      // Refresh the student list
+      fetchData();
+    } else {
+      // Failed to delete student
+      alert("Failed to delete student.");
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert("An error occurred while deleting the student.");
+  }
+}
+
 
 
 
